@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 90%);
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    background-color: hsl(0, 0%, 10%);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.calculator .btns-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+}
+.calculator .btns-container .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator .btns-container .calc-btn{
+    font-size: 32px;
+    color: white;
+    background-color:  hsl(0, 0%, 20%);
+    min-width: 90px;
+    min-height: 90px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+}
+.calculator .btns-container .calc-btn:hover{
+    background-color: hsl(0, 0%, 30%);
+}
+.calculator .btns-container .calc-btn:active{
+    background-color: hsl(0, 0%, 40%);
+}
+.calculator .resultDisplay{
+    border: none;
+    padding: 30px 15px;
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    background-color: hsl(0, 0%, 15%);
+    cursor: auto;
+}
+.calculator .resultDisplay:focus-visible{
+    outline: none;
+}
+.operator{
+    background-color: hsl(22, 100%, 50%) !important;
+}
+.operator:hover{
+    background-color: hsl(22, 100%, 60%) !important;
+}
+.operator:active{
+    background-color: hsl(22, 100%, 70%) !important ;
+}
+.calcResul:hover{
+    background-color: hsl(0, 100%, 60%) !important;
+}
+.calcResul:active{
+    background-color: hsl(0, 100%, 70%) !important;
+}
+.clear{
+    font-size: 32px;
+    color: white;
+    background-color:  hsl(0, 0%, 20%);
+    min-width: 90px;
+    min-height: 90px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+}
+.clear:hover{
+    background-color: hsl(0, 0%, 30%);
+}
+.clear:active{
+    background-color: hsl(0, 0%, 40%);
+}
+
+.calcResul{
+    font-size: 32px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+    width: 95%;
+    min-height: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: hsl(0, 100%, 50%);
+}

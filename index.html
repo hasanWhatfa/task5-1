@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" readonly class="resultDisplay">
+        <div class="btns-container">
+            <div class="row">
+                <button class="calc-btn operator" onclick="setOperation('+')"> + </button>
+                <button class="calc-btn Num" onclick="appendNumber(7)">7</button>
+                <button class="calc-btn Num" onclick="appendNumber(8)">8</button>
+                <button class="calc-btn Num" onclick="appendNumber(9)">9</button>
+            </div>
+            <div class="row">
+                <button class="calc-btn operator" onclick="setOperation('-')"> - </button>
+                <button class="calc-btn Num" onclick="appendNumber(4)">4</button>
+                <button class="calc-btn Num" onclick="appendNumber(5)">5</button>
+                <button class="calc-btn Num" onclick="appendNumber(6)">6</button>
+            </div>
+            <div class="row">
+                <button class= "calc-btn operator" onclick="setOperation('*')"> * </button>
+                <button class="calc-btn Num" onclick="appendNumber(3)">3</button>
+                <button class="calc-btn Num" onclick="appendNumber(2)">2</button>
+                <button class="calc-btn Num" onclick="appendNumber(1)">1</button>
+            </div>
+            <div class="row">
+                <button class="operator calc-btn" onclick="setOperation('/')"> / </button>
+                <button class="calc-btn Num" onclick="appendNumber(0)">0</button>
+                <button class="calc-btn" onclick="Delete()">X</button>
+                <button class=" clear" onclick="clearDisplay()">C</button>
+            </div>
+            <button class="calcResul" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
